@@ -22,7 +22,7 @@ const userSchema = {
   },
   required: ["firstName", "email", "gender"],
   additionalProperties: false,
-}
+};
 
 const idSchema = {
   type: "object",
@@ -35,8 +35,7 @@ const idSchema = {
   },
   required: ["id"],
   additionalProperties: false,
-}
-
+};
 
 const validateUser = ajv.compile(userSchema);
 const validateId = ajv.compile(idSchema);
